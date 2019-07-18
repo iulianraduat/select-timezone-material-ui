@@ -41,10 +41,21 @@ storiesOf('SelectTimezoneMaterialUi', module)
       Selected timezone: <span id="stzmui4" />
     </div>
   ))
-  .add('with preselected timezone', () => (
+  .add('with preselected timezone (without GMT in option)', () => (
     <div>
       <SelectTimezoneMaterialUi timezoneName="Etc/UTC" onChange={showSelectedValue('stzmui5')} />
       <div style={style} />
       Selected timezone: <span id="stzmui5" />
+    </div>
+  ))
+  .add('with preselected timezone (with GMT in option)', () => (
+    <div>
+      <SelectTimezoneMaterialUi
+        timezoneName="Etc/UTC (GMT+00:00)"
+        showTimezoneOffset={true}
+        onChange={showSelectedValue('stzmui6')}
+      />
+      <div style={style} />
+      Selected timezone: <span id="stzmui6" />
     </div>
   ));

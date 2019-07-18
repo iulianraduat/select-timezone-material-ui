@@ -24,11 +24,18 @@ const SelectTimezoneMaterialUi: React.FC<SelectTimezoneMaterialUiProps> = ({
     msgNoOptionsMatchFilter: 'No timezone matches the filter'
   };
 
+  const defaultValue: number | undefined = React.useMemo(() => {
+    const matchingOption = options.find((option: SelectOption) => option.label === timezoneName);
+    return matchingOption ? matchingOption.value : undefined;
+  }, [options, timezoneName]);
+
+  console.log({ timezoneName, defaultValue });
+
   return (
     <SingleSelect
       {...rest}
       options={options}
-      defaultValue={timezoneName}
+      defaultValue={defaultValue}
       onChange={handleChange}
       SelectProps={selectProps}
     />

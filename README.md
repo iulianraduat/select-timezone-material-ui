@@ -1,6 +1,8 @@
 # select-timezone-material-ui
 
-It allows you to select one of the timezones defined by [Moment.Timezone](https://momentjs.com/timezone/) from a material-ui like dropdown component
+It allows you to select one of the timezones defined by [Moment.Timezone](https://momentjs.com/timezone/) from a material-ui like dropdown component.
+
+Selecting a timezone will also select all other timezones with the same offset.
 
 ---
 
@@ -77,3 +79,8 @@ export default App;
 ### 1.0.0
 
 - select-timezone-material-ui is made publicly available
+
+### 1.0.1
+
+- Fixed the default selected timezones when timezoneName is provided
+- Added more examples to storybook
