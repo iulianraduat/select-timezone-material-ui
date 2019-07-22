@@ -36,6 +36,7 @@ const SelectTimezoneMaterialUi: React.FC<SelectTimezoneMaterialUiProps> = ({
       {...rest}
       options={options}
       defaultValue={defaultValue}
+      placeholder="Timezone ..."
       onChange={handleChange}
       SelectProps={selectProps}
     />

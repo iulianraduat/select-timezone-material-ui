@@ -84,3 +84,7 @@ export default App;
 
 - Fixed the default selected timezones when timezoneName is provided
 - Added more examples to storybook
+
+### 1.0.2
+
+- Changed the text of the placeholder
