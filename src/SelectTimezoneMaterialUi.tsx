@@ -29,8 +29,6 @@ const SelectTimezoneMaterialUi: React.FC<SelectTimezoneMaterialUiProps> = ({
     return matchingOption ? matchingOption.value : undefined;
   }, [options, timezoneName]);
 
-  console.log({ timezoneName, defaultValue });
-
   return (
     <SingleSelect
       {...rest}

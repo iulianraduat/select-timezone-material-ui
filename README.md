@@ -88,3 +88,7 @@ export default App;
 ### 1.0.2
 
 - Changed the text of the placeholder
+
+### 1.0.3
+
+- Made the options to keep the underline in name

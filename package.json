@@ -1,6 +1,6 @@
 {
   "name": "select-timezone-material-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "It allows you to select one of the timezones defined by Moment.Timezone from a material-ui like dropdown component",
   "main": "lib/index.js",
   "sideEffects": false,
