@@ -18,6 +18,7 @@ The component accepts the props defined bellow in the table.
 
 | Name                | Type                                                   | Required | Default   | Description                                             |
 |---------------------|--------------------------------------------------------|----------|-----------|---------------------------------------------------------|
+| defaultTimezoneName | string                                                 | no       | undefined | The initially selected timezone                         |
 | FormHelperTextProps | FormHelperTextProps                                    | no       | undefined | The props passed to helper text                         |
 | helperText          | string                                                 | no       | undefined | The helper text                                         |
 | id                  | string                                                 | no       | undefined | The id of the field                                     |
@@ -25,7 +26,7 @@ The component accepts the props defined bellow in the table.
 | label               | string                                                 | yes      | -         | The label of the field                                  |
 | onChange            | (timezoneName: string, timezoneOffset: number) => void | yes      | -         | The callback function called when the option is changed |
 | showTimezoneOffset  | boolean                                                | no       | false     | The options include the GMT offset if it is true        |
-| timezoneName        | string                                                 | no       | undefined | The initially selected timezone                         |
+| timezoneName        | string                                                 | no       | undefined | The selected timezone                                   |
 
 ---
 
@@ -34,6 +35,7 @@ The component accepts the props defined bellow in the table.
 | SelectTimezoneMaterialUi _uses_ | Material-ui | React  |
 |--------------------------------:|:-----------:|:------:|
 |                           1.0.x |    4.2.0    | 16.8.6 |
+|                           2.0.x |    4.3.0    | 16.8.6 |
 
 ### About versioning schema used for SelectTimezoneMaterialUi
 
@@ -92,3 +94,7 @@ export default App;
 ### 1.0.3
 
 - Made the options to keep the underline in name
+
+### 2.0.0
+
+- Made the component to be controlled and uncontrolled

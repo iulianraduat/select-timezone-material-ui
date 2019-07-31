@@ -4,6 +4,7 @@ import { InputLabelProps } from '@material-ui/core/InputLabel';
 import { InputProps } from '@material-ui/core/Input';
 
 export interface SelectTimezoneMaterialUiProps extends React.Props<SelectTimezoneMaterialUi> {
+  defaultTimezoneName?: string;
   FormHelperTextProps?: FormHelperTextProps;
   helperText?: string;
   id?: string;

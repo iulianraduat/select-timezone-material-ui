@@ -5,6 +5,7 @@ import { InputLabelProps } from '@material-ui/core/InputLabel';
 import { SelectOption, SingleSelect } from 'react-select-material-ui';
 
 const SelectTimezoneMaterialUi: React.FC<SelectTimezoneMaterialUiProps> = ({
+  defaultTimezoneName,
   onChange,
   showTimezoneOffset,
   timezoneName,
@@ -25,6 +26,19 @@ const SelectTimezoneMaterialUi: React.FC<SelectTimezoneMaterialUiProps> = ({
   };
 
   const defaultValue: number | undefined = React.useMemo(() => {
+    if (defaultTimezoneName === undefined) {
+      return undefined;
+    }
+
+    const matchingOption = options.find((option: SelectOption) => option.label === defaultTimezoneName);
+    return matchingOption ? matchingOption.value : undefined;
+  }, [options, defaultTimezoneName]);
+
+  const value: number | undefined = React.useMemo(() => {
+    if (timezoneName === undefined) {
+      return undefined;
+    }
+
     const matchingOption = options.find((option: SelectOption) => option.label === timezoneName);
     return matchingOption ? matchingOption.value : undefined;
   }, [options, timezoneName]);
@@ -34,6 +48,7 @@ const SelectTimezoneMaterialUi: React.FC<SelectTimezoneMaterialUiProps> = ({
       {...rest}
       options={options}
       defaultValue={defaultValue}
+      value={value}
       placeholder="Timezone ..."
       onChange={handleChange}
       SelectProps={selectProps}
@@ -42,6 +57,7 @@ const SelectTimezoneMaterialUi: React.FC<SelectTimezoneMaterialUiProps> = ({
 };
 
 interface SelectTimezoneMaterialUiProps {
+  defaultTimezoneName?: string;
   FormHelperTextProps?: FormHelperTextProps;
   helperText?: string;
   id?: string;

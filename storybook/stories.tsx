@@ -24,28 +24,42 @@ storiesOf('SelectTimezoneMaterialUi', module)
       Selected timezone: <span id="stzmui2" />
     </div>
   ))
+  .add('controlled', () => (
+    <div>
+      <SelectTimezoneMaterialUi timezoneName="America/New_York" onChange={showSelectedValue('stzmuic')} />
+      <div style={style} />
+      Selected timezone: <span id="stzmuic" />
+    </div>
+  ))
+  .add('uncontrolled with default timezone name', () => (
+    <div>
+      <SelectTimezoneMaterialUi defaultTimezoneName="America/New_York" onChange={showSelectedValue('stzmuiuc')} />
+      <div style={style} />
+      Selected timezone: <span id="stzmuiuc" />
+    </div>
+  ))
   .add('with label', () => (
     <div>
-      <SelectTimezoneMaterialUi label="Timezone" onChange={showSelectedValue('stzmui3')} />
+      <SelectTimezoneMaterialUi label="Timezone" onChange={showSelectedValue('stzmuil')} />
       <div style={style} />
-      Selected timezone: <span id="stzmui3" />
+      Selected timezone: <span id="stzmuil" />
     </div>
   ))
   .add('with helper text', () => (
     <div>
       <SelectTimezoneMaterialUi
         helperText="Please select a timezone from the list"
-        onChange={showSelectedValue('stzmui4')}
+        onChange={showSelectedValue('stzmuiht')}
       />
       <div style={style} />
-      Selected timezone: <span id="stzmui4" />
+      Selected timezone: <span id="stzmuiht" />
     </div>
   ))
   .add('with preselected timezone (without GMT in option)', () => (
     <div>
-      <SelectTimezoneMaterialUi timezoneName="Etc/UTC" onChange={showSelectedValue('stzmui5')} />
+      <SelectTimezoneMaterialUi timezoneName="Etc/UTC" onChange={showSelectedValue('stzmuipt1')} />
       <div style={style} />
-      Selected timezone: <span id="stzmui5" />
+      Selected timezone: <span id="stzmuipt1" />
     </div>
   ))
   .add('with preselected timezone (with GMT in option)', () => (
@@ -53,9 +67,9 @@ storiesOf('SelectTimezoneMaterialUi', module)
       <SelectTimezoneMaterialUi
         timezoneName="Etc/UTC (GMT+00:00)"
         showTimezoneOffset={true}
-        onChange={showSelectedValue('stzmui6')}
+        onChange={showSelectedValue('stzmuipt2')}
       />
       <div style={style} />
-      Selected timezone: <span id="stzmui6" />
+      Selected timezone: <span id="stzmuipt2" />
     </div>
   ));
