@@ -43,8 +43,12 @@ const SelectTimezoneMaterialUi: React.FC<SelectTimezoneMaterialUiProps> = ({
     return matchingOption ? matchingOption.value : undefined;
   }, [options, timezoneName]);
 
+  // FIXME nu este timezone schimbat pe baza lui value
+  console.log({ value, defaultValue, options });
+
   return (
     <SingleSelect
+      key={timezoneName}
       {...rest}
       options={options}
       defaultValue={defaultValue}

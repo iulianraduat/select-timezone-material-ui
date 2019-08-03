@@ -1,3 +1,4 @@
+import ATDynamicUpdateValuesControlledComponent from './ATDynamicUpdateValuesControlledComponent';
 import React from 'react';
 import SelectTimezoneMaterialUi from '../src/SelectTimezoneMaterialUi';
 import { storiesOf } from '@storybook/react';
@@ -73,3 +74,10 @@ storiesOf('SelectTimezoneMaterialUi', module)
       Selected timezone: <span id="stzmuipt2" />
     </div>
   ));
+
+storiesOf('Advanced tests', module).add('Dynamic update of timezone for a controlled component', () => (
+  <div>
+    <ATDynamicUpdateValuesControlledComponent />
+    <p>The selected timezone should change every 0.5 seconds.</p>
+  </div>
+));

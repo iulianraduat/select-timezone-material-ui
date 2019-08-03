@@ -1,6 +1,6 @@
 {
   "name": "select-timezone-material-ui",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "It allows you to select one of the timezones defined by Moment.Timezone from a material-ui like dropdown component",
   "main": "lib/index.js",
   "sideEffects": false,
@@ -36,12 +36,12 @@
   },
   "homepage": "https://github.com/iulian-radu-at/select-timezone-material-ui#readme",
   "dependencies": {
-    "@material-ui/core": "^4.3.0",
+    "@material-ui/core": "^4.3.1",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.26",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-select-material-ui": "^4.2.2"
+    "react-select-material-ui": "^4.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -50,7 +50,7 @@
     "@types/enzyme": "^3.10.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/moment-timezone": "^0.5.12",
-    "@types/react": "^16.8.23",
+    "@types/react": "^16.8.24",
     "@types/react-dom": "^16.8.5",
     "@types/rimraf": "^2.0.2",
     "@types/storybook__react": "^4.0.2",

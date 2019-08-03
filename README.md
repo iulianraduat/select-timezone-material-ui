@@ -36,6 +36,7 @@ The component accepts the props defined bellow in the table.
 |--------------------------------:|:-----------:|:------:|
 |                           1.0.x |    4.2.0    | 16.8.6 |
 |                           2.0.x |    4.3.0    | 16.8.6 |
+|                           2.1.x |    4.3.1    | 16.8.6 |
 
 ### About versioning schema used for SelectTimezoneMaterialUi
 
@@ -98,3 +99,8 @@ export default App;
 ### 2.0.0
 
 - Made the component to be controlled and uncontrolled
+
+### 2.1.0
+
+- Using a bug fix version of react-select-material-ui
+- Updated packages
