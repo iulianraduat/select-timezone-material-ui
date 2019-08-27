@@ -11,6 +11,7 @@ const showSelectedValue = (id: string) => (timezoneName: string, timezoneOffset:
   (document.getElementById(id).textContent = `${timezoneName} (${timezoneOffset})`);
 
 storiesOf('SelectTimezoneMaterialUi', module)
+  .addParameters({ options: { showPanel: false } })
   .add('options does not contain timezone offset', () => (
     <div>
       <SelectTimezoneMaterialUi onChange={showSelectedValue('stzmui1')} />
@@ -75,9 +76,11 @@ storiesOf('SelectTimezoneMaterialUi', module)
     </div>
   ));
 
-storiesOf('Advanced tests', module).add('Dynamic update of timezone for a controlled component', () => (
-  <div>
-    <ATDynamicUpdateValuesControlledComponent />
-    <p>The selected timezone should change every 0.5 seconds.</p>
-  </div>
-));
+storiesOf('Advanced tests', module)
+  .addParameters({ options: { showPanel: false } })
+  .add('Dynamic update of timezone for a controlled component', () => (
+    <div>
+      <ATDynamicUpdateValuesControlledComponent />
+      <p>The selected timezone should change every 0.5 seconds.</p>
+    </div>
+  ));
