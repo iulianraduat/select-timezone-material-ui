@@ -1,4 +1,4 @@
-# select-timezone-material-ui ![Weekly downloads](https://img.shields.io/npm/dw/select-timezone-material-ui 'Weekly downloads')
+# select-timezone-material-ui ![Weekly downloads](https://img.shields.io/npm/dw/select-timezone-material-ui "Weekly downloads")
 
 It allows you to select one of the timezones defined by [Moment.Timezone](https://momentjs.com/timezone/) from a material-ui like dropdown component.
 
@@ -39,6 +39,7 @@ The component accepts the props defined bellow in the table.
 |                           2.1.x |    4.3.1    | 16.8.6 |
 |                           2.2.x |    4.9.0    | 16.9.0 |
 |                           2.3.x |    4.9.7    | 16.9.0 |
+|                           2.4.x |   4.10.2    | 16.9.0 |
 
 ### About versioning schema used for SelectTimezoneMaterialUi
 
@@ -53,8 +54,8 @@ The component accepts the props defined bellow in the table.
 The base component which allows to create read-only or creatable select components for selecting only one or more values:
 
 ```js
-import * as React from 'react';
-import SelectTimezoneMaterialUi from 'input-material-ui';
+import * as React from "react";
+import SelectTimezoneMaterialUi from "input-material-ui";
 
 class App extends React.Component {
   render() {
@@ -115,3 +116,7 @@ export default App;
 
 - Updated packages
 - Moved from npm to yarn
+
+### 2.4.0
+
+- Updated packages
