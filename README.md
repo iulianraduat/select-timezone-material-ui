@@ -40,6 +40,7 @@ The component accepts the props defined bellow in the table.
 |                           2.2.x |    4.9.0    | 16.9.0 |
 |                           2.3.x |    4.9.7    | 16.9.0 |
 |                           2.4.x |   4.10.2    | 16.9.0 |
+|                           2.5.x |   4.11.0    | 16.9.0 |
 
 ### About versioning schema used for SelectTimezoneMaterialUi
 
@@ -118,5 +119,9 @@ export default App;
 - Moved from npm to yarn
 
 ### 2.4.0
+
+- Updated packages
+
+### 2.5.0
 
 - Updated packages
