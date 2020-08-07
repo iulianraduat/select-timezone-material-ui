@@ -1,1 +1,1 @@
-export * from './SelectTimezoneMaterialUi';
+export { default } from "./SelectTimezoneMaterialUi";

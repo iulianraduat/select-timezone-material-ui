@@ -64,7 +64,7 @@ class App extends React.Component {
       <div className="App">
         <SelectTimezoneMaterialUi
           label="Timezone"
-          helpertext="Please select a timezone from the list"
+          helperText="Please select a timezone from the list"
           onChange={onChange}
         />
       </div>
@@ -125,3 +125,7 @@ export default App;
 ### 2.5.0
 
 - Updated packages
+
+### 2.5.1
+
+- Fixed crash produced by "export \* from"

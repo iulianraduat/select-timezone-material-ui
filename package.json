@@ -1,6 +1,6 @@
 {
   "name": "select-timezone-material-ui",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "It allows you to select one of the timezones defined by Moment.Timezone from a material-ui like dropdown component",
   "main": "lib/index.js",
   "sideEffects": false,
@@ -8,10 +8,10 @@
     "build": "rimraf ./lib && tsc",
     "deploy": "cross-env NODE_ENV=production yarn build && yarn publish --non-interactive",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -c storybook",
-    "build-storybook": "build-storybook -c storybook -o docs",
-    "commit-storybook": "git add . && git commit -m \"Updated storybook\"",
-    "all": "yarn install && yarn build-storybook && yarn deploy"
+    "storybook:start": "start-storybook -c storybook",
+    "storybook:build": "build-storybook -c storybook -o docs",
+    "storybook:commit": "git add . && git commit -m \"Updated storybook\"",
+    "all": "yarn install && yarn storybook:build && yarn deploy"
   },
   "repository": {
     "type": "git",
@@ -44,17 +44,17 @@
     "react-select-material-ui": "^6.7.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.5",
+    "@babel/core": "^7.11.1",
     "@storybook/react": "^5.3.19",
     "@types/babel-core": "^6.25.6",
     "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/moment-timezone": "^0.5.13",
-    "@types/react": "^16.9.43",
+    "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.8",
     "@types/rimraf": "^3.0.0",
     "babel-core": "^6.26.3",
-    "babel-jest": "^26.1.0",
+    "babel-jest": "^26.2.2",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "^9.1.2",
     "cross-env": "^7.0.2",
