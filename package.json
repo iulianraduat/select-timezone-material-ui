@@ -1,6 +1,6 @@
 {
   "name": "select-timezone-material-ui",
-  "version": "2.5.1",
+  "version": "2.6.0",
   "description": "It allows you to select one of the timezones defined by Moment.Timezone from a material-ui like dropdown component",
   "main": "lib/index.js",
   "sideEffects": false,
@@ -38,34 +38,34 @@
   },
   "homepage": "https://github.com/iulian-radu-at/select-timezone-material-ui#readme",
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "moment": "^2.27.0",
-    "moment-timezone": "^0.5.31",
-    "react-select-material-ui": "^6.7.0"
+    "@material-ui/core": "^4.11.3",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "react-select-material-ui": "^6.8.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.1",
-    "@storybook/react": "^5.3.19",
+    "@babel/core": "^7.13.8",
+    "@storybook/react": "6.0.28",
     "@types/babel-core": "^6.25.6",
-    "@types/enzyme": "^3.10.5",
+    "@types/enzyme": "^3.10.8",
     "@types/enzyme-adapter-react-16": "^1.0.6",
-    "@types/moment-timezone": "^0.5.13",
-    "@types/react": "^16.9.44",
-    "@types/react-dom": "^16.9.8",
+    "@types/moment-timezone": "^0.5.30",
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.11",
     "@types/rimraf": "^3.0.0",
     "babel-core": "^6.26.3",
-    "babel-jest": "^26.2.2",
-    "babel-loader": "^8.1.0",
-    "babel-preset-react-app": "^9.1.2",
-    "cross-env": "^7.0.2",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-react-app": "^10.0.0",
+    "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-adapter-react-16": "^1.15.6",
     "rimraf": "^3.0.2",
-    "typescript": "^3.9.7"
+    "typescript": "^4.2.2"
   },
   "peerDependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
   },
   "jest": {
     "modulePathIgnorePatterns": [

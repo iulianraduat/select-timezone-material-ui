@@ -1,4 +1,4 @@
-# select-timezone-material-ui ![Weekly downloads](https://img.shields.io/npm/dw/select-timezone-material-ui "Weekly downloads")
+# select-timezone-material-ui ![Weekly downloads](https://img.shields.io/npm/dw/select-timezone-material-ui 'Weekly downloads')
 
 It allows you to select one of the timezones defined by [Moment.Timezone](https://momentjs.com/timezone/) from a material-ui like dropdown component.
 
@@ -32,15 +32,16 @@ The component accepts the props defined bellow in the table.
 
 ## Versions
 
-| SelectTimezoneMaterialUi _uses_ | Material-ui | React  |
-| ------------------------------: | :---------: | :----: |
-|                           1.0.x |    4.2.0    | 16.8.6 |
-|                           2.0.x |    4.3.0    | 16.8.6 |
-|                           2.1.x |    4.3.1    | 16.8.6 |
-|                           2.2.x |    4.9.0    | 16.9.0 |
-|                           2.3.x |    4.9.7    | 16.9.0 |
-|                           2.4.x |   4.10.2    | 16.9.0 |
-|                           2.5.x |   4.11.0    | 16.9.0 |
+| SelectTimezoneMaterialUi _uses_ | Material-ui |      React       |
+| ------------------------------: | :---------: | :--------------: |
+|                           1.0.x |    4.2.0    |      16.8.6      |
+|                           2.0.x |    4.3.0    |      16.8.6      |
+|                           2.1.x |    4.3.1    |      16.8.6      |
+|                           2.2.x |    4.9.0    |      16.9.0      |
+|                           2.3.x |    4.9.7    |      16.9.0      |
+|                           2.4.x |   4.10.2    |      16.9.0      |
+|                           2.5.x |   4.11.0    |      16.9.0      |
+|                           2.6.x |   4.11.3    | 16.9.0 or 17.0.0 |
 
 ### About versioning schema used for SelectTimezoneMaterialUi
 
@@ -55,8 +56,8 @@ The component accepts the props defined bellow in the table.
 The base component which allows to create read-only or creatable select components for selecting only one or more values:
 
 ```js
-import * as React from "react";
-import SelectTimezoneMaterialUi from "input-material-ui";
+import * as React from 'react';
+import SelectTimezoneMaterialUi from 'input-material-ui';
 
 class App extends React.Component {
   render() {
@@ -129,3 +130,8 @@ export default App;
 ### 2.5.1
 
 - Fixed crash produced by "export \* from"
+
+### 2.6.0
+
+- Accepting React 17 as peerDependencies
+- Fixed security warnings
