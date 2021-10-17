@@ -1,8 +1,7 @@
+import { FormHelperTextProps, InputLabelProps } from '@mui/material';
 import * as React from 'react';
-import { FormHelperTextProps } from '@material-ui/core/FormHelperText';
-import { getTimeZoneOptions } from './Timezones';
-import { InputLabelProps } from '@material-ui/core/InputLabel';
 import { SelectOption, SingleSelect } from 'react-select-material-ui';
+import { getTimeZoneOptions } from './Timezones';
 
 const SelectTimezoneMaterialUi: React.FC<SelectTimezoneMaterialUiProps> = ({
   defaultTimezoneName,
@@ -22,7 +21,7 @@ const SelectTimezoneMaterialUi: React.FC<SelectTimezoneMaterialUiProps> = ({
 
   const selectProps = {
     msgNoOptionsAvailable: 'No timezone was defined',
-    msgNoOptionsMatchFilter: 'No timezone matches the filter'
+    msgNoOptionsMatchFilter: 'No timezone matches the filter',
   };
 
   const defaultValue: number | undefined = React.useMemo(() => {
