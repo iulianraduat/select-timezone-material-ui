@@ -59,7 +59,7 @@ The base component which allows to create read-only or creatable select componen
 
 ```js
 import * as React from 'react';
-import SelectTimezoneMaterialUi from 'input-material-ui';
+import SelectTimezoneMaterialUi from 'select-timezone-material-ui';
 
 class App extends React.Component {
   render() {
