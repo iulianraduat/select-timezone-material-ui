@@ -3,7 +3,7 @@ import { FormHelperTextProps } from '@material-ui/core/FormHelperText';
 import { InputLabelProps } from '@material-ui/core/InputLabel';
 import { InputProps } from '@material-ui/core/Input';
 
-export interface SelectTimezoneMaterialUiProps extends React.Props<SelectTimezoneMaterialUi> {
+export interface SelectTimezoneMaterialUiProps {
   defaultTimezoneName?: string;
   FormHelperTextProps?: FormHelperTextProps;
   helperText?: string;
