@@ -8,11 +8,12 @@
     "strictNullChecks": true,
     "removeComments": true,
     "declaration": false,
-    "sourceMap": true,
+    "sourceMap": false,
     "jsx": "react",
-    "skipLibCheck": true,
     "typeRoots": ["index.d.ts", "node_modules/@types"],
-    "lib": ["es5", "es6", "dom"]
+    "lib": ["es5", "es6", "dom"],
+    "skipLibCheck": true,
+    "esModuleInterop": true
   },
   "include": ["./src/**/*.tsx", "./src/**/*.ts"],
   "exclude": ["node_modules"]

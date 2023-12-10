@@ -1,11 +1,14 @@
-import { Story } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import SelectTimezoneMaterialUi from '../src/SelectTimezoneMaterialUi';
 import ATDynamicUpdateValuesControlledComponent from './ATDynamicUpdateValuesControlledComponent';
 
-export default {
+const meta: Meta<typeof SelectTimezoneMaterialUi> = {
   title: 'SelectTimezoneMaterialUi',
-};
+  component: SelectTimezoneMaterialUi,
+} as Meta<typeof SelectTimezoneMaterialUi>;
+export default meta;
+type Story = StoryObj<typeof SelectTimezoneMaterialUi>;
 
 const style: React.CSSProperties = {
   height: 20,
@@ -17,7 +20,7 @@ const showSelectedValue =
       id
     )!.textContent = `${timezoneName} (${timezoneOffset})`);
 
-export const OptionsDoesNotContainTimezoneOffset: Story = () => (
+export const OptionsDoesNotContainTimezoneOffset = () => (
   <div>
     <SelectTimezoneMaterialUi onChange={showSelectedValue('stzmui1')} />
     <div style={style} />
@@ -27,7 +30,7 @@ export const OptionsDoesNotContainTimezoneOffset: Story = () => (
 OptionsDoesNotContainTimezoneOffset.storyName =
   'Options does not contain timezone offset';
 
-export const OptionsContainTimezoneOffset: Story = () => (
+export const OptionsContainTimezoneOffset = () => (
   <div>
     <SelectTimezoneMaterialUi
       showTimezoneOffset={true}
@@ -39,7 +42,7 @@ export const OptionsContainTimezoneOffset: Story = () => (
 );
 OptionsContainTimezoneOffset.storyName = 'Options contain timezone offset';
 
-export const Controlled: Story = () => (
+export const Controlled = () => (
   <div>
     <SelectTimezoneMaterialUi
       timezoneName="America/New_York"
@@ -51,7 +54,7 @@ export const Controlled: Story = () => (
 );
 Controlled.storyName = 'Controlled';
 
-export const UncontrolledWithDefaultTimezoneName: Story = () => (
+export const UncontrolledWithDefaultTimezoneName = () => (
   <div>
     <SelectTimezoneMaterialUi
       defaultTimezoneName="America/New_York"
@@ -64,7 +67,7 @@ export const UncontrolledWithDefaultTimezoneName: Story = () => (
 UncontrolledWithDefaultTimezoneName.storyName =
   'Uncontrolled with default timezone name';
 
-export const WithLabel: Story = () => (
+export const WithLabel = () => (
   <div>
     <SelectTimezoneMaterialUi
       label="Timezone"
@@ -76,7 +79,7 @@ export const WithLabel: Story = () => (
 );
 WithLabel.storyName = 'With label';
 
-export const WithHelperText: Story = () => (
+export const WithHelperText = () => (
   <div>
     <SelectTimezoneMaterialUi
       helperText="Please select a timezone from the list"
@@ -88,7 +91,7 @@ export const WithHelperText: Story = () => (
 );
 WithHelperText.storyName = 'With helper text';
 
-export const WithPreselectedTimezoneWithoutGmtInOption: Story = () => (
+export const WithPreselectedTimezoneWithoutGmtInOption = () => (
   <div>
     <SelectTimezoneMaterialUi
       timezoneName="Etc/UTC"
@@ -101,7 +104,7 @@ export const WithPreselectedTimezoneWithoutGmtInOption: Story = () => (
 WithPreselectedTimezoneWithoutGmtInOption.storyName =
   'With preselected timezone (without GMT in option)';
 
-export const WithPreselectedTimezoneWithGmtInOption: Story = () => (
+export const WithPreselectedTimezoneWithGmtInOption = () => (
   <div>
     <SelectTimezoneMaterialUi
       timezoneName="Etc/UTC (GMT+00:00)"
@@ -115,7 +118,7 @@ export const WithPreselectedTimezoneWithGmtInOption: Story = () => (
 WithPreselectedTimezoneWithGmtInOption.storyName =
   'With preselected timezone (with GMT in option)';
 
-export const DynamicUpdateOfTimezoneForAControlledComponent: Story = () => (
+export const DynamicUpdateOfTimezoneForAControlledComponent = () => (
   <div>
     <ATDynamicUpdateValuesControlledComponent />
     <p>The selected timezone should change every 0.5 seconds.</p>
